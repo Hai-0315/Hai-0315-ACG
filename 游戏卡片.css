@@ -1,0 +1,64 @@
+
+ /* 设置容器的样式 */
+
+        .gamecard {
+            background-color: #FFE4E4; /* 图片背景颜色 */   
+            display:flex;  
+            width:1040px;
+            height:100%;
+            padding:10px;
+            gap:10px;
+            box-sizing: border-box;
+        }
+        
+        .gameimgcard {
+            background-color: #ECE3C6; /* 图片背景颜色 */     
+            width:410px;
+            height:215px;
+            border-radius: 1px; /* 设置圆角，与父div保持一致 */
+            overflow: hidden; /* 隐藏超出部分 */
+            box-sizing: border-box;
+           
+        }
+
+        .gameimg {
+            width:100%; /* 图片宽度占满父div */
+            height: 100%; /* 图片高度占满父div */
+            object-fit: cover; /* 保持图片比例，覆盖整个区域 */
+            /*object-fit: fill; /* 让图片完全填满div */
+            /*object-fit: contain; /* 让图片保持原始比例并尽可能大 */
+            /*object-position: center; /* 让图片居中 */
+            border-radius: 0px; /* 设置圆角，与父div要保持一致 */
+            box-sizing: border-box;
+        }
+        .gamepcard {
+            background-color: #F3FBC4; /* 图片背景颜色 */     
+            width:600px;
+            height:215px;
+            
+            box-sizing: border-box;
+            overflow: hidden; /* 隐藏超出部分 */
+            gap:4px;
+        }
+        .gamepcard p{
+        padding-left:20px;
+        white-space: nowrap;
+        font-size:35px;
+        /*border: 2px solid black;
+        flex: 1; /* 每个段落平均分配高度 */
+        display: flex;
+        align-items: center; /* 垂直居中对齐文字 */
+        }
+        
+
+
+  /* 背景颜色 */
+  /*box-sizing  的值是  content-box 。在这种情况下，元素的宽度和高度只包括内容区域，不包括内边距、边框和外边距。*/
+  /*如果你将  box-sizing  设置为  border-box ，元素的宽度和高度将包括内容区域、内边距和边框，但不包括外边距。*/
+  /*包括内容区域、内边距（padding）、边框（border）和外边距（margin）*/
+
+* {
+  border: 0;       /* 清除边框 */
+  padding: 0;      /* 清除内边距 */
+  margin: 0;       /* 清除外边距 */
+}
