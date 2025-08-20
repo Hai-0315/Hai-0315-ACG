@@ -1,0 +1,36 @@
+
+ /* 设置容器的样式 */
+
+        .div1 {
+            /*background-color: #d4edda; /* 图片背景颜色 */     
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* 每行30列 */
+            gap: 10px; /* 图片之间没有间距 */
+            padding: 10px;
+            height:1500px;
+            widht:10000px;
+            box-sizing: border-box;
+            
+        }
+
+        
+body {
+    height:100%;
+    width:100%;
+    padding: 50px 0;
+    /*background-color: #D1BD81; /* 背景颜色 */
+    box-sizing: border-box;
+}
+html {
+  padding-top: 5px;
+  background-color: #FFFFFE; 
+  /* 背景颜色 */
+  /*box-sizing  的值是  content-box 。在这种情况下，元素的宽度和高度只包括内容区域，不包括内边距、边框和外边距。*/
+  /*如果你将  box-sizing  设置为  border-box ，元素的宽度和高度将包括内容区域、内边距和边框，但不包括外边距。*/
+  /*包括内容区域、内边距（padding）、边框（border）和外边距（margin）*/
+}
+* {
+  border: 0;       /* 清除边框 */
+  padding: 0;      /* 清除内边距 */
+  margin: 0;       /* 清除外边距 */
+}
