@@ -1,0 +1,64 @@
+/* styles.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #FFDDB0; /* 背景颜色 */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 300px; /* 固定高度 */
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #333; /* 默认字体颜色 */
+  text-decoration: none;
+  font-size: 188px;
+  font-weight: normal; /* 默认字体不加粗 */
+  position: relative; /* 为伪元素定位 */
+  padding: 5px 0; /* 为下划线留出空间 */
+  transition: font-weight 0.3s, text-decoration 0.3s; /* 添加过渡效果 */
+  display: inline-block; /* 使 padding 生效 */
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  font-weight: bold; /* 字体加粗 */
+  text-decoration: none; /* 移除下划线 */
+}
+
+nav ul li a:hover:after,
+nav ul li a.active:after {
+  content: ''; /* 使用伪元素创建下划线 */
+  position: absolute;
+  left: 0;
+  bottom: 5px; /* 调整下划线位置 */
+  width: 100%;
+  height: 9px; /* 调整下划线高度，占字体大小的一半 */
+  background-color: #00bfff; /* 天蓝色 */
+  z-index: -1; /* 确保下划线在字体后面 */
+}
+
+
+body{
+  padding: 20px;
+  padding-top: 320px; /* 为内容留出导航栏的空间 */
+}
