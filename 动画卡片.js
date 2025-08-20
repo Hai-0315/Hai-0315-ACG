@@ -1,7 +1,7 @@
 // 从 CSV 文件中读取数据并插入到 HTML 中
 async function fetchAndDisplayData() {
   try {
-    const response = await fetch('工作室/追番/汇总/追番.csv');
+    const response = await fetch('追番.csv');
     const text = await response.text();
     const rows = text.split('\n').slice(1); // 跳过表头
     const details = rows.map(row => row.split(','));
@@ -23,7 +23,7 @@ async function fetchAndDisplayData() {
 
       // 创建 img 标签
       const webp1 = document.createElement('img');
-      webp1.src = `工作室/追番/汇总/图片/${detail[0]}.webp`; // 示例图片
+      webp1.src = `追番图片/${detail[0]}.webp`; // 示例图片
       webp1.alt = '示例图片';
       webp1.className = 'webp1';
       webp1.id = `webp1-${detail[0]}`; // 为每个div设置唯一的id
