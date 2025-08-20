@@ -1,0 +1,63 @@
+
+ /* 设置容器的样式 */
+
+        .card1 {
+            background-color: #D8D8D8; /* 图片背景颜色 */   
+            display:flex;  
+            width:736px;
+            height:490px;
+            padding:40px;
+            gap:40px;
+            box-sizing: border-box;
+        }
+        
+        .img1 {
+            background-color: #ECE3C6; /* 图片背景颜色 */     
+            width:308px;
+            height:410px;
+            border-radius: 10px; /* 设置圆角，与父div保持一致 */
+            overflow: hidden; /* 隐藏超出部分 */
+            box-sizing: border-box;
+           
+        }
+
+        .webp1 {
+            width: 308px; /* 图片宽度占满父div */
+            height: 410px; /* 图片高度占满父div */
+            /*object-fit: cover; /* 使图片覆盖整个div */
+            /*object-fit: fill; /* 让图片完全填满div */
+            /*object-fit: contain; /* 让图片保持原始比例并尽可能大 */
+            /*object-position: center; /* 让图片居中 */
+            border-radius: 1px; /* 设置圆角，与父div要保持一致 */
+            box-sizing: border-box;
+        }
+        .pp1 {
+            background-color: #F3FBC4; /* 图片背景颜色 */     
+            width:308px;
+            height:410px;
+            
+            box-sizing: border-box;
+            overflow: hidden; /* 隐藏超出部分 */
+            gap:4px;
+        }
+        .pp1 p{
+        white-space: nowrap;
+        font-size:40px;
+        border: 2px solid black;
+        flex: 1; /* 每个段落平均分配高度 */
+        display: flex;
+        align-items: center; /* 垂直居中对齐文字 */
+        }
+        
+
+
+  /* 背景颜色 */
+  /*box-sizing  的值是  content-box 。在这种情况下，元素的宽度和高度只包括内容区域，不包括内边距、边框和外边距。*/
+  /*如果你将  box-sizing  设置为  border-box ，元素的宽度和高度将包括内容区域、内边距和边框，但不包括外边距。*/
+  /*包括内容区域、内边距（padding）、边框（border）和外边距（margin）*/
+
+* {
+  border: 0;       /* 清除边框 */
+  padding: 0;      /* 清除内边距 */
+  margin: 0;       /* 清除外边距 */
+}
