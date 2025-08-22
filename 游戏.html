@@ -7,25 +7,22 @@
         <link rel="stylesheet" href="游戏导航.css">
         <link rel="stylesheet" href="游戏卡片.css">
 </head>
-<header>
-    <nav id="navbar">
-      <ul>
-        <li><a href="动画.html">动画</a></li>
-        <li><a href="#about">游戏</a></li>
-        <li><a href="#services">小说</a></li>
-        <li><a href="#contact">更多</a></li>
-      </ul>
-    </nav>
-  </header>
+<!DOCTYPE html>
+<head>
+        <!-- 引入远程CSS文件 -->
+        <link rel="stylesheet" href="游戏.css">
+        <link rel="stylesheet" href="游戏卡片.css">
+</head>
 <body>
     <!-- 这是一个容器 -->
     <div class="div1" id="div1"></div>
     <!-- 引入本地JavaScript文件 -->
     <script src="游戏卡片.js"></script>
         <!-- 配置播放器 -->
-<div id="xf-MusicPlayer"  data-localMusic="localhost:8001/playlistData.json" data-cdnName="https://player.xfyun.club/js"></div>
+<!--<div id="xf-MusicPlayer"  data-localMusic="playlistData.json" data-cdnName="https://player.xfyun.club/js"></div>-->
+<div id="xf-MusicPlayer" data-songList="3958633617" data-cdnName="https://player.xfyun.club/js"></div>
     <!-- 引入插件 -->
-    <script src="xf-MusicPlayer.min.js"></script>
+     <script src="https://player.xfyun.club/js/xf-MusicPlayer/js/xf-MusicPlayer.min.js"></script>
 </body>
 
 </html>
