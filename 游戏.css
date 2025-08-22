@@ -1,36 +1,62 @@
-
- /* 设置容器的样式 */
-
-        .div1 {
-            /*background-color: #d4edda; /* 图片背景颜色 */     
-            display: grid;
-            grid-template-columns: repeat(1, 1fr); /* 每行30列 */
-            gap: 10px; /* 图片之间没有间距 */
-            padding: 10px;
-            height:1500px;
-            widht:10000px;
-            box-sizing: border-box;
-            
-        }
-
-        
-body {
-    height:100%;
-    width:100%;
-    padding: 50px 0;
-    /*background-color: #D1BD81; /* 背景颜色 */
-    box-sizing: border-box;
+/* 清除默认样式 */
+* {
+    border: 0;       /* 清除边框 */
+    padding: 0;      /* 清除内边距 */
+    margin: 0;       /* 清除外边距 */
+    
 }
-html {
-  padding-top: 5px;
-  background-color: #FFFFFE; 
+
+/* 设置容器的样式 */
+.gamecard {
+    background-color: #FFE4E4; /* 容器背景颜色 */
+    display: grid;
+    grid-template-columns:33% 66% ; /* 左右划分，第一列最小宽度为 475px，第二列占 5 份 */
+    height:145px;
+   /* width:1266px;*/
+    padding: 10px;
+    gap: 10px;
+    aspect-ratio: 940/ 215; /* 宽高比为 4:1 */
+    }
+
+
+/* 设置图片卡片的样式 */
+.gameimgcard {
+    background-color: #ECE3C6; /* 图片卡片背景颜色 */
+    /*width: 475px; /* 宽度占满父容器 */
+    border-radius: 2px; /* 设置圆角 */
+    overflow: hidden; /* 隐藏超出部分 */
+    
+}
+
+
+/* 设置图片的样式 */
+.gameimg {
+    width: 100%; /* 图片宽度占满父div */
+    height: 100%; /* 图片高度占满父div */
+    object-fit: cover; /* 保持图片比例，覆盖整个区域 */
+    border-radius: 2px; /* 设置圆角，与父div保持一致 */
+}
+
+/* 设置文字卡片的样式 */
+.gamepcard {
+    background-color: #F3FBC4; /* 文字卡片背景颜色 */
+    overflow: hidden; /* 隐藏超出部分 */
+    gap: 4px;
+}
+
+/* 设置文字卡片中文字的样式 */
+.gamepcard p {
+    padding-left: 20px;
+    white-space: nowrap;
+    font-size: 15px;
+    display: flex;
+    align-items: center; /* 垂直居中对齐文字 */
+}
+
+
   /* 背景颜色 */
   /*box-sizing  的值是  content-box 。在这种情况下，元素的宽度和高度只包括内容区域，不包括内边距、边框和外边距。*/
   /*如果你将  box-sizing  设置为  border-box ，元素的宽度和高度将包括内容区域、内边距和边框，但不包括外边距。*/
   /*包括内容区域、内边距（padding）、边框（border）和外边距（margin）*/
-}
-* {
-  border: 0;       /* 清除边框 */
-  padding: 0;      /* 清除内边距 */
-  margin: 0;       /* 清除外边距 */
-}
+  /*aspect-ratio: 1 / 1; ：表示  part1  的宽度和高度相等，即宽高比为 1:1。 
+  aspect-ratio: 2 / 1; ：表示  part2  的宽度是高度的两倍，即宽高比为 2:1。*/
